@@ -7,7 +7,7 @@ type AccordionProps = {
 
 function Accordion({ questions }: AccordionProps) {
   return (
-    <ul className='flex flex-col gap-4'>
+    <ul className='flex flex-col gap-4 animate-fade-up'>
       {questions.map((q) => (
         <AccordionCard key={q.id} question={q} />
       ))}

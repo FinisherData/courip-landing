@@ -7,10 +7,14 @@ export default function Home() {
     <div className='flex min-h-screen flex-col'>
       <Navbar />
       <Hero />
-      <main className='flex-1 mx-10'>
-        <h2 className='text-2xl font-medium'>¿Qué es Courip?</h2>
+      <main className='flex-1 mx-10 lg:mx-40 my-10'>
         <Faq />
       </main>
+      <footer className='p-4'>
+        <p className='text-center text-gray-400'>
+          Made with ❤️ by <a href=''>Courip Team</a>
+        </p>
+      </footer>
     </div>
   );
 }
